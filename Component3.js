@@ -1,11 +1,19 @@
 import React from "react";
+import {UserConsumer} from "./context";
 
 export default class Component3 extends React.Component
 {
   render()
   {
     return (
-      <p>Component3</p>
+     <UserConsumer>
+     {
+       (username) => {
+          return <div>hello {username}</div>
+       }
+
+     }
+     </UserConsumer>
     )
   }
 }

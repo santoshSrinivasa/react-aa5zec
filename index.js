@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import './style.css';
 import Component1 from "./Component1";
+import {UserProvider} from "./context";
+
 
 class App extends Component {
   constructor() {
@@ -14,7 +16,9 @@ class App extends Component {
   render() {
     return (
       <div>
+      <UserProvider value="santosh">
         <Component1/>
+        </UserProvider>
       </div>
     );
   }

@@ -7,7 +7,7 @@ export default class Component1 extends React.Component
   {
     return (
       <div>
-      <p>Component 2</p>
+      <p>Component 1</p>
       <Component2 />
       </div>
     )
