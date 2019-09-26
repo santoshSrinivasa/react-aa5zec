@@ -15,11 +15,10 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-      <UserProvider value="santosh">
+     
+     <UserProvider value="san">
         <Component1/>
-        </UserProvider>
-      </div>
+     </UserProvider>
     );
   }
 }
